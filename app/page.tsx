@@ -1,3 +1,5 @@
+import ExampleComponent from '@/components/example-component';
+
 export default function Home() {
   const exampleItems = [
     {
@@ -39,15 +41,14 @@ export default function Home() {
 
   return (
     <div className='max-w-7xl flex flex-col mx-auto min-h-svh px-8 py-16 gap-16'>
-      <div className='flex flex-col gap-2'>
+      <div className='flex flex-col gap-4'>
         <h2 className='text-2xl font-bold'>Next 15 Starter Repo</h2>
-        <p className='text-muted-foreground'>
+        <p className='text-muted-foreground max-w-prose'>
           This is a starter repo for Next 15. It includes Tailwind CSS, and
-          TypeScript.
+          TypeScript. ShadCN UI is initialised, with Sonner included as an
+          example component.
         </p>
-      </div>
-      <div className='flex flex-col gap-4 border rounded-md p-4'>
-        <p>Tabs</p>
+        <ExampleComponent />
       </div>
       <div className='grid grid-cols-2 gap-6'>
         <div className=''>
