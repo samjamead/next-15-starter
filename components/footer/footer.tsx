@@ -20,7 +20,7 @@ export default async function Footer({
           <p>
             Last updated by commit{" "}
             <a
-              href={`https://github.com/samjamead/next-15-starter/commit/${repoData.sha}`}
+              href={`https://github.com/samjamead/next-15-starter/commits/main/`}
               target="_blank"
               className="text-numbers hover:border-numbers rounded-t border-b-2 border-transparent bg-yellow-500/10 px-1 py-0.5 font-semibold transition-all duration-300"
             >

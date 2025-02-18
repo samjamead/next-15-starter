@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     "An opinionated starter repo for a Next.js 15 project, with TypeScript, Tailwind and ShadCN",
 };
 
-const appWidth = "max-w-6xl";
-const bodyGutter = "px-4";
+const appWidth = "max-w-lg md:max-w-xl lg:max-w-5xl";
+const bodyGutter = "px-3";
 
 export default function RootLayout({
   children,
