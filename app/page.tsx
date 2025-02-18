@@ -2,7 +2,7 @@ import { DashedList, DashedListItem } from "@/components/ui/dashed-list";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-6 py-12">
+    <div className="flex flex-col gap-6 pb-20 pt-12">
       <div className="flex flex-col gap-3">
         <p className="max-w-fit rounded-md border px-2 py-1 font-mono text-sm">
           Updated to Next.js{" "}
