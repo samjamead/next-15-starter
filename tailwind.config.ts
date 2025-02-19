@@ -14,6 +14,7 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         numbers: "hsl(var(--numbers))",
+        contrast: "hsl(var(--contrast))",
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
