@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DashedList, DashedListItem } from "@/components/ui/dashed-list";
-import { MessageCircleWarning, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import {
   Popover,
   PopoverContent,
@@ -49,74 +49,70 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
-        <Card>
-          <CardHeader>
-            <CardTitle>Dark on dark on dark</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>
-              Sometimes you need three levels of dark. I like the Supabase
-              studio{" "}
-              <span className="whitespace-nowrap font-mono text-numbers">
-                9%, 12%, 15%{" "}
-              </span>{" "}
-              tiering, but a small{" "}
-              <span className="whitespace-nowrap font-mono text-numbers">
-                15%
-              </span>{" "}
-              can get lost on a big{" "}
-              <span className="whitespace-nowrap font-mono text-numbers">
-                12%
-              </span>
-              , so we darkened it a bit here.
-            </p>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader>
-            <CardTitle>For example...</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-col gap-4">
-              <div className="flex items-start gap-4">
-                <div className="bg-contrast rounded p-2 shadow">
-                  <Sparkles className="h-5 w-5 text-foreground" />
-                </div>
-                <p className="pt-1">
-                  The little icon backgrounds can&apos;t always be colours, so
-                  you&apos;ll need a contrast to work on cards.
-                </p>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="bg-contrast rounded p-2 shadow">
-                  <MessageCircleWarning className="h-5 w-5 text-foreground" />
-                </div>
-                <p className="pt-1">
-                  This contrast is{" "}
-                  <span className="whitespace-nowrap font-mono text-numbers">
-                    17%
-                  </span>{" "}
-                  and it stands out a little better.
-                </p>
-              </div>
+      <Card className="border-black">
+        <CardHeader>
+          <CardTitle>Dark on dark on dark</CardTitle>
+        </CardHeader>
+        <CardContent className="max-w-prose">
+          <p className="mb-4 leading-7">
+            Sometimes you need three levels of dark. I like the Supabase studio{" "}
+            <span className="whitespace-nowrap rounded bg-numbers/10 px-1 py-0.5 font-mono text-numbers">
+              9%, 12%, 15%{" "}
+            </span>{" "}
+            tiering, but a small swatch of{" "}
+            <span className="whitespace-nowrap font-mono text-numbers">
+              15%
+            </span>{" "}
+            can get lost on a big{" "}
+            <span className="whitespace-nowrap font-mono text-numbers">
+              12%
+            </span>
+            , so we lightened it a bit here.
+          </p>
+
+          <div className="flex items-center gap-5">
+            <div className="rounded bg-contrast p-3 shadow">
+              <Sparkles className="h-6 w-6 text-foreground" />
             </div>
-          </CardContent>
-        </Card>
-      </div>
+            <p className="pt-1">
+              The little icon backgrounds can&apos;t always be colours, so
+              you&apos;ll need a contrast to work on cards. This contrast is{" "}
+              <span className="whitespace-nowrap font-mono text-numbers">
+                17%
+              </span>{" "}
+              and it stands out a little better.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+
       <div>
         <p className="max-w-prose leading-7">
-          Other times, you might want to highlight some text as interactive,
-          which could be fun &ndash; you know, maybe have your readers enjoy
+          Other times, you might want to use your primary colour to highlight
+          some text as interactive, you know, maybe have your readers enjoy
           <Popover>
-            <PopoverTrigger className="mx-0.5 border-b border-blue-500 bg-blue-500/25 px-0.5">
+            <PopoverTrigger className="mx-0.5 border-b border-primary bg-primary/20 px-0.5">
               footnotes as popovers
             </PopoverTrigger>
             <PopoverContent>
               You gotta pay the cheese tax if you wanna come in...
             </PopoverContent>
           </Popover>
-          , rather than just a boring old list.
+          , rather than just a boring old list at the end.
+        </p>
+      </div>
+
+      <div>
+        <p className="max-w-prose leading-7">
+          ShadCN has a few other colour tricks up its sleeve, too:{" "}
+          <span className="rounded bg-muted px-2 py-1 text-muted-foreground">
+            muted
+          </span>{" "}
+          and{" "}
+          <span className="rounded bg-accent px-2 py-1 text-accent-foreground">
+            accent
+          </span>
+          .
         </p>
       </div>
     </div>

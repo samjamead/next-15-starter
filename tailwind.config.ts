@@ -13,6 +13,33 @@ export default {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        heliotrope: {
+          "50": "#fdf3ff",
+          "100": "#fae7ff",
+          "200": "#f4ceff",
+          "300": "#f0a7ff",
+          "400": "#e872ff",
+          "500": "#de59f9",
+          "600": "#c01ddc",
+          "700": "#a214b7",
+          "800": "#861395",
+          "900": "#70157a",
+          "950": "#4b0052",
+        },
+        "dark-blue": {
+          "50": "#f3f3ff",
+          "100": "#e9e8ff",
+          "200": "#d5d5ff",
+          "300": "#b5b2ff",
+          "400": "#9187fe",
+          "500": "#6d56fc",
+          "600": "#5933f4",
+          "700": "#4c22df",
+          "800": "#421dc5",
+          "900": "#351999",
+          "950": "#1e0d68",
+        },
+
         numbers: "hsl(var(--numbers))",
         contrast: "hsl(var(--contrast))",
         muted: {
