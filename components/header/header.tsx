@@ -21,8 +21,7 @@ export default function Header({
         <div className="flex flex-col gap-2">
           <h1 className="text-lg font-bold">Next 15 Starter Repo</h1>
           <p className="max-w-prose text-balance text-muted-foreground lg:text-nowrap">
-            An opinionated starter repo for a Next.js 15 project, with
-            TypeScript, Tailwind and ShadCN
+            Opinionated starter kit, with TypeScript, Tailwind and ShadCN
           </p>
         </div>
 

@@ -20,10 +20,10 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Next 15 Starter Repo",
   description:
-    "An opinionated starter repo for a Next.js 15 project, with TypeScript, Tailwind and ShadCN",
+    "Opinionated starter repo for Next.js 15, with TypeScript, Tailwind and ShadCN",
 };
 
-const appWidth = "max-w-lg md:max-w-xl lg:max-w-5xl";
+const appWidth = "max-w-lg md:max-w-xl lg:max-w-4xl";
 const bodyGutter = "px-3";
 
 export default function RootLayout({
