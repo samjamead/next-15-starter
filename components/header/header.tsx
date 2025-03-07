@@ -2,7 +2,12 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import GithubMark from "@/public/github-mark.svg";
 import GithubMarkWhite from "@/public/github-mark-white.svg";
-
+import {
+  repoOrganisation,
+  repoName,
+  repoProjectName,
+  repoProjectDescription,
+} from "@/lib/repo-config";
 export default function Header({
   maxWidth,
   bodyGutter = "px-4",
@@ -19,9 +24,9 @@ export default function Header({
         )}
       >
         <div className="flex flex-col gap-2">
-          <h1 className="text-lg font-bold">Next 15 Starter Repo</h1>
+          <h1 className="text-lg font-bold">{repoProjectName}</h1>
           <p className="max-w-prose text-balance text-muted-foreground lg:text-nowrap">
-            Opinionated starter kit, with TypeScript, Tailwind and ShadCN
+            {repoProjectDescription}
           </p>
         </div>
 
@@ -44,7 +49,9 @@ export default function Header({
             height={24}
             className="block dark:hidden"
           />
-          <p>samjamead/next-15-starter</p>
+          <p>
+            {repoOrganisation}/{repoName}
+          </p>
         </a>
       </nav>
     </header>

@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/sonner";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import { cn } from "@/lib/utils";
+import { repoProjectName, repoProjectDescription } from "@/lib/repo-config";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,9 +19,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Next 15 Starter Repo",
-  description:
-    "Opinionated starter repo for Next.js 15, with TypeScript, Tailwind and ShadCN",
+  title: repoProjectName,
+  description: repoProjectDescription,
 };
 
 const appWidth = "max-w-lg md:max-w-xl lg:max-w-4xl";
