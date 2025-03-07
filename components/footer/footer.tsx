@@ -12,8 +12,6 @@ export default async function Footer({
   const data = await fetch(`${repoApiUrl}/commits/main`);
   const repoData = await data.json();
 
-  console.log(repoData);
-
   return (
     <footer className={cn("w-full border-t py-16", bodyGutter)}>
       <div className={cn("mx-auto w-full", maxWidth)}>
