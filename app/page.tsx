@@ -25,7 +25,7 @@ export default function Home() {
             href="https://nextjs.org/blog/next-15-2"
             target="_blank"
           >
-            15.2.1
+            15.2.4
           </a>
         </p>
         <h2 className="mb-6 text-3xl font-bold tracking-tight">
