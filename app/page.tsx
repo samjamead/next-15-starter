@@ -22,10 +22,10 @@ export default function Home() {
           Updated to Next.js{" "}
           <a
             className="border-b-2 border-transparent font-semibold text-numbers transition-all duration-300 hover:border-numbers hover:bg-yellow-500/10"
-            href="https://nextjs.org/blog/next-15-2"
+            href="https://nextjs.org/blog/next-15-3"
             target="_blank"
           >
-            15.2.4
+            15.3.1
           </a>
         </p>
         <h2 className="mb-6 text-3xl font-bold tracking-tight">
