@@ -16,18 +16,30 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-12 pb-20 pt-12">
+    <div className="flex flex-col gap-12 pt-12 pb-20">
       <div className="flex flex-col gap-3">
-        <p className="max-w-fit rounded-md border px-2 py-1 font-mono text-sm">
-          Updated to Next.js{" "}
-          <a
-            className="border-b-2 border-transparent font-semibold text-numbers transition-all duration-300 hover:border-numbers hover:bg-yellow-500/10"
-            href="https://nextjs.org/blog/next-15-3"
-            target="_blank"
-          >
-            15.3.1
-          </a>
-        </p>
+        <div className="flex items-center gap-2">
+          <p className="max-w-fit rounded-md border px-2 py-1 font-mono text-sm">
+            Next.js{" "}
+            <a
+              className="text-numbers hover:border-numbers border-b-2 border-transparent font-semibold transition-all duration-300 hover:bg-yellow-500/10"
+              href="https://nextjs.org/blog/next-15-3"
+              target="_blank"
+            >
+              15.3.3
+            </a>
+          </p>
+          <p className="max-w-fit rounded-md border px-2 py-1 font-mono text-sm">
+            Tailwind{" "}
+            <a
+              className="text-numbers hover:border-numbers border-b-2 border-transparent font-semibold transition-all duration-300 hover:bg-yellow-500/10"
+              href="https://tailwindcss.com/blog/tailwindcss-v4"
+              target="_blank"
+            >
+              4.1.8
+            </a>
+          </p>
+        </div>
         <h2 className="mb-6 text-3xl font-bold tracking-tight">
           Here&apos;s the page header
         </h2>
@@ -84,28 +96,28 @@ export default function Home() {
         <CardContent className="max-w-prose">
           <p className="mb-4 leading-7">
             Sometimes you need three levels of dark. I like the Supabase studio{" "}
-            <span className="whitespace-nowrap rounded bg-numbers/10 px-1 py-0.5 font-mono text-numbers">
+            <span className="bg-numbers/10 text-numbers rounded px-1 py-0.5 font-mono whitespace-nowrap">
               9%, 12%, 15%{" "}
             </span>{" "}
             tiering, but a small swatch of{" "}
-            <span className="whitespace-nowrap font-mono text-numbers">
+            <span className="text-numbers font-mono whitespace-nowrap">
               15%
             </span>{" "}
             can get lost on a big{" "}
-            <span className="whitespace-nowrap font-mono text-numbers">
+            <span className="text-numbers font-mono whitespace-nowrap">
               12%
             </span>
             , so we lightened it a bit here.
           </p>
 
           <div className="flex items-center gap-5">
-            <div className="rounded bg-contrast p-3 shadow">
-              <ArrowRight className="h-6 w-6 text-foreground" />
+            <div className="bg-contrast rounded p-3 shadow-sm">
+              <ArrowRight className="text-foreground h-6 w-6" />
             </div>
             <p className="pt-1">
               The little icon backgrounds can&apos;t always be colours, so
               you&apos;ll need a contrast to work on cards. This contrast is{" "}
-              <span className="whitespace-nowrap font-mono text-numbers">
+              <span className="text-numbers font-mono whitespace-nowrap">
                 17%
               </span>{" "}
               and it stands out a little better.
@@ -118,7 +130,7 @@ export default function Home() {
           Other times, you might want to use your primary colour to highlight
           some text as interactive, you know, maybe have your readers enjoy
           <Popover>
-            <PopoverTrigger className="mx-0.5 border-b border-primary bg-primary/20 px-0.5">
+            <PopoverTrigger className="border-primary bg-primary/20 mx-0.5 border-b px-0.5">
               footnotes as popovers
             </PopoverTrigger>
             <PopoverContent>
@@ -130,23 +142,23 @@ export default function Home() {
       </div>
       <p className="max-w-prose leading-7">
         ShadCN has a few other colour tricks up its sleeve, too:{" "}
-        <span className="rounded bg-muted px-2 py-1 text-muted-foreground">
+        <span className="bg-muted text-muted-foreground rounded px-2 py-1">
           muted
         </span>{" "}
         and{" "}
-        <span className="rounded bg-accent px-2 py-1 text-accent-foreground">
+        <span className="bg-accent text-accent-foreground rounded px-2 py-1">
           accent
         </span>
         .
       </p>
       <p className="max-w-prose leading-7">
-        <span className="rounded bg-accent px-2 py-1 text-accent-foreground">
+        <span className="bg-accent text-accent-foreground rounded px-2 py-1">
           Accent
         </span>{" "}
         acts as a background colour for interactive elements, like buttons, or
         as a hover colour for things like dropdown lists.
       </p>
-      <div className="flex h-48 items-center justify-center rounded-md border border-black bg-card p-8">
+      <div className="bg-card flex h-48 items-center justify-center rounded-md border border-black p-8">
         <DropdownMenu>
           <DropdownMenuTrigger className="rounded border px-4 py-2">
             Here, a dropdown
@@ -159,7 +171,7 @@ export default function Home() {
         </DropdownMenu>
       </div>
       <p className="max-w-prose leading-7">
-        <span className="rounded bg-muted px-2 py-1 text-muted-foreground">
+        <span className="bg-muted text-muted-foreground rounded px-2 py-1">
           Muted
         </span>{" "}
         is there to fade into the background, for example, behind the tabs in a
@@ -168,9 +180,9 @@ export default function Home() {
       <div className="flex items-center justify-center rounded-md border p-8">
         <Tabs
           defaultValue="tab1"
-          className="w-full max-w-lg rounded-md bg-muted"
+          className="bg-muted w-full max-w-lg rounded-md"
         >
-          <TabsList className="w-full justify-stretch rounded-b-none rounded-t-md border-b-2 border-b-black pb-1">
+          <TabsList className="w-full justify-stretch rounded-t-md rounded-b-none border-b-2 border-b-black pb-1">
             <TabsTrigger value="tab1" className="w-full">
               Tab 1
             </TabsTrigger>
