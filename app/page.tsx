@@ -23,10 +23,10 @@ export default function Home() {
             Next.js{" "}
             <a
               className="text-numbers hover:border-numbers border-b-2 border-transparent font-semibold transition-all duration-300 hover:bg-yellow-500/10"
-              href="https://nextjs.org/blog/next-15-3"
+              href="https://nextjs.org/blog/next-15-4"
               target="_blank"
             >
-              15.3.3
+              15.4.1
             </a>
           </p>
           <p className="max-w-fit rounded-md border px-2 py-1 font-mono text-sm">
@@ -36,7 +36,7 @@ export default function Home() {
               href="https://tailwindcss.com/blog/tailwindcss-v4"
               target="_blank"
             >
-              4.1.8
+              4.1.11
             </a>
           </p>
         </div>
